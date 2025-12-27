@@ -41,5 +41,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *s);
 void free_matrix(char **matrix);
+void assign_index(t_node *stack);
+
+//// To Remove 
+
+// void print_index(t_node *head);
 
 #endif
