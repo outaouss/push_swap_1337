@@ -1,26 +1,29 @@
-FLAG = -Wall -Werror -Wextra
+NAME    = push_swap
+CC      = cc
+FLAGS   = -Wall -Wextra -Werror
 
-NAME = push_swap.a
+SRC     = push.c reverse_rotate.c rotate.c swap.c \
+          error_utils.c utils.c parsing.c ft_split.c seconde_utils.c \
+          
+OBJ     = $(SRC:.c=.o)
 
-SRC = push.c reverse_rotate.c rotate.c swap.c
+all: $(NAME)
 
-OBJ = $(SRC:.c=.o)
+$(NAME): $(OBJ)
+	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+	@echo "Push_swap Created!"
 
-all = $(NAME)
+%.o: %.c push_swap.h
+	$(CC) $(FLAGS) -c $< -o $@
 
-$(NAME) = $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	@echo "Created ! ! "
-
-%.o: %.c push_swap.a
-	cc $(FLAG) -c $< -o $@
-
-clean :
+clean:
 	rm -f $(OBJ)
-	@echo "Deleted ! ! !"
+	@echo "Objects Deleted!"
 
-fclean : clean
-	rm -rf $(NAME)
-	@echo "Deleted"
+fclean: clean
+	rm -f $(NAME)
+	@echo "Executable Deleted!"
 
-.phony : clean
+re: fclean all
+
+.PHONY: clean

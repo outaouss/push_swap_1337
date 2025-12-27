@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 t_node *find_last_node(t_node *lst)
 {
@@ -12,7 +12,7 @@ t_node *find_last_node(t_node *lst)
     return lst;
 }
 
-static void rotate(t_node **stack)
+void rotate(t_node **stack)
 {
     t_node *first;
     t_node *last;
@@ -60,29 +60,29 @@ void print_stack(t_node *head)
 }
 
 
-int main()
-{
-    t_node *node1 = malloc(sizeof(t_node));
-    t_node *node2 = malloc(sizeof(t_node));
-    t_node *node3 = malloc(sizeof(t_node));
+// int main()
+// {
+//     t_node *node1 = malloc(sizeof(t_node));
+//     t_node *node2 = malloc(sizeof(t_node));
+//     t_node *node3 = malloc(sizeof(t_node));
 
-    node1->value = 5;
-    node2->value = 6;
-    node3->value = 7;
+//     node1->value = 5;
+//     node2->value = 6;
+//     node3->value = 7;
 
-    node1->next = node2;
-    node2->next = node3;
-    node3->next = NULL;
+//     node1->next = node2;
+//     node2->next = node3;
+//     node3->next = NULL;
 
-    node1->previous = NULL;
-    node2->previous = node1;
-    node3->previous = node2;
+//     node1->previous = NULL;
+//     node2->previous = node1;
+//     node3->previous = node2;
 
-    printf("before rotate\n");
-    print_stack(node1);
+//     printf("before rotate\n");
+//     print_stack(node1);
 
-    ra(&node1);
+//     ra(&node1);
     
-    printf("After Rotate\n");
-    print_stack(node1);
-}
+//     printf("After Rotate\n");
+//     print_stack(node1);
+// }

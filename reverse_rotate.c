@@ -1,18 +1,6 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
-t_node *find_last_node(t_node *lst)
-{
-    if (!lst)
-        return NULL;
-
-    while ((lst)->next)
-    {
-        (lst) = (lst)->next;
-    }
-    return lst;
-}
-
-static void reverse_rotate(t_node **stack)
+void reverse_rotate(t_node **stack)
 {
     t_node *last;
 
@@ -22,7 +10,7 @@ static void reverse_rotate(t_node **stack)
     last = find_last_node(*stack);
 
     last->previous->next = NULL;
-
+    
     last->next = *stack;
     last->previous = NULL;
 
@@ -47,15 +35,6 @@ void rrr(t_node **stack_a, t_node **stack_b)
     reverse_rotate(stack_a);
     reverse_rotate(stack_b);
     write(1, "rrr\n", 4);
-}
-
-void print_stack(t_node *head)
-{
-    while (head)
-    {
-        printf("%d\n", head->value);
-        head = head->next;
-    }
 }
 
 
