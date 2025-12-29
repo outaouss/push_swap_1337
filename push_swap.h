@@ -13,6 +13,10 @@ typedef struct s_node
     struct s_node *previous;
 } t_node;
 
+void ss(t_node **stack_a, t_node **stack_b);
+void sb(t_node **stack_b);
+void sa(t_node **stack_a);
+void swap(t_node **stack);
 void print_stack(t_node *head);
 void rr(t_node **stack_a, t_node **stack_b);
 void rb(t_node **stack_b);
@@ -42,6 +46,12 @@ size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *s);
 void free_matrix(char **matrix);
 void assign_index(t_node *stack);
+int is_sorted(t_node *stack);
+int stack_len(t_node *stack);
+void sort_three(t_node **stack);
+void sort_five(t_node **stack_a, t_node **stack_b);
+t_node *find_max_index(t_node *stack);
+t_node *find_min_index(t_node *stack);
 
 //// To Remove 
 

@@ -2,8 +2,8 @@ NAME    = push_swap
 CC      = cc
 FLAGS   = -Wall -Wextra -Werror
 
-SRC     = push.c reverse_rotate.c rotate.c swap.c main.c sort_utils.c \
-          error_utils.c utils.c parsing.c ft_split.c seconde_utils.c \
+SRC     = push.c reverse_rotate.c rotate.c swap.c main.c sort_utils.c finding.c \
+          error_utils.c utils.c parsing.c ft_split.c seconde_utils.c sorting_algo.c \
           
 OBJ     = $(SRC:.c=.o)
 
