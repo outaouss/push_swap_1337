@@ -35,7 +35,7 @@ void error_exit_av(t_node **stack, char **av);
 void free_stack(t_node **stack);
 long ft_atoi(char *str, t_node **stack, char **av);
 // long ft_atoi(char *str);
-int has_duplicated(t_node *stack_a, long checker);
+int has_duplicated(t_node *stack_a, long checker, char **av);
 void stack_add_back(t_node **stack, t_node *to_add);
 t_node *create_node(long value, t_node **stack);
 void fill_stack_a(t_node **stack_a, char **av);

@@ -58,8 +58,9 @@ long ft_atoi(char *str, t_node **stack, char **av)
     return (result * sign);
 }
 
-int has_duplicated(t_node *stack_a, long checker)
+int has_duplicated(t_node *stack_a, long checker, char **av)
 {
+    (void)av;
     t_node *tmp;
     
     if (!stack_a)
@@ -68,7 +69,7 @@ int has_duplicated(t_node *stack_a, long checker)
     while (tmp)
     {
         if (tmp->value == checker)
-            error_exit(&stack_a);
+            error_exit_av(&stack_a, av);
         tmp = tmp->next;
     }
     return (0);
