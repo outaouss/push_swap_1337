@@ -9,7 +9,7 @@ void sort_three(t_node **stack)
     else if (big_index->next != NULL)
         rra(stack);
     if ((*stack)->index > (*stack)->next->index)
-        sa(stack); 
+        sa(stack);
 }
 
 void sort_five(t_node **stack_a, t_node **stack_b)
@@ -76,6 +76,7 @@ void k_sort_phase2(t_node **stack_a, t_node **stack_b)
                 pa(stack_a, stack_b);
             else if (pos <= stack_len(*stack_b) / 2)
                 rb(stack_b);
+
             else
                 rrb(stack_b);
         }
