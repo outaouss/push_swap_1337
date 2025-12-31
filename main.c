@@ -1,20 +1,13 @@
 #include "push_swap.h"
 
-// void print_index(t_node *head)
-// {
-//     while (head)
-//     {
-//         printf("%d\n", head->index);
-//         head = head->next;
-//     }
-// }
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
-	t_node *stack_a;
-	t_node *stack_b;
-	char **args;
-	int j = 1;
+	t_node	*stack_a;
+	t_node	*stack_b;
+	char	**args;
+	int		j;
 
+	j = 1;
 	stack_a = NULL;
 	stack_b = NULL;
 	if (ac < 2)
