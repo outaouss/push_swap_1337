@@ -6,16 +6,20 @@
 /*   By: spilota <spilota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 16:06:35 by outaouss          #+#    #+#             */
-/*   Updated: 2026/01/02 17:10:43 by spilota          ###   ########.fr       */
+/*   Updated: 2026/01/02 21:04:07 by spilota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
+// |--> Used Libraries <--|
+
 # include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
+
+// |--> Doubly Linked List Struct <--|
 
 typedef struct s_node
 {
@@ -24,6 +28,8 @@ typedef struct s_node
 	struct s_node	*next;
 	struct s_node	*previous;
 }	t_node;
+
+// |--> Mandatory Part <--|
 
 void	ss(t_node **stack_a, t_node **stack_b, int silent);
 void	sb(t_node **stack_b, int silent);
@@ -40,7 +46,6 @@ void	rra(t_node **stack_a, int silent);
 void	push(t_node **stack_a, t_node **stack_b);
 void	pa(t_node **stack_a, t_node **stack_b, int silent);
 void	pb(t_node **stack_a, t_node **stack_b, int silent);
-void	error_exit(t_node **stack);
 void	error_exit_av(t_node **stack, char **av);
 void	free_stack(t_node **stack);
 void	stack_add_back(t_node **stack, t_node *to_add);
@@ -70,7 +75,7 @@ char	**free_arr(char **arr, int index_c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s);
 
-// Bonus Part -->
+// |--> Bonus Part <--|
 
 int		ft_strcmp(char *s1, char *s2);
 int		executed_cmd(char *cmd, t_node **a, t_node **b);
