@@ -21,9 +21,9 @@ this will generate the | push_swap | executable ,and for bonus run this --> **[M
 
 **References :**
 
-- 1 - Documentation : 42 Project Subject PDF .
-- 2 - Articles : https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a - https://www.geeksforgeeks.org/dsa/doubly-linked-list/ .
-- 3 - Peer Learning .
+- - Documentation : 42 Project Subject PDF .
+- - Articles : https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a - https://www.geeksforgeeks.org/dsa/doubly-linked-list/ .
+- - Peer Learning .
 
 **Usage of AI :**
 
