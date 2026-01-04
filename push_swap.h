@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spilota <spilota@student.42.fr>            +#+  +:+       +#+        */
+/*   By: outaouss <outaouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 16:06:35 by outaouss          #+#    #+#             */
-/*   Updated: 2026/01/02 21:04:07 by spilota          ###   ########.fr       */
+/*   Updated: 2026/01/03 16:55:47 by outaouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 // |--> Used Libraries <--|
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 

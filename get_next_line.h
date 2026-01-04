@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spilota <spilota@student.42.fr>            +#+  +:+       +#+        */
+/*   By: outaouss <outaouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 09:46:09 by outaouss          #+#    #+#             */
-/*   Updated: 2026/01/02 00:09:15 by spilota          ###   ########.fr       */
+/*   Updated: 2026/01/03 16:58:22 by outaouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
+#  define BUFFER_SIZE 4
 # endif
 
 # include <unistd.h>

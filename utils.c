@@ -6,7 +6,7 @@
 /*   By: outaouss <outaouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 16:06:55 by outaouss          #+#    #+#             */
-/*   Updated: 2026/01/01 16:52:38 by outaouss         ###   ########.fr       */
+/*   Updated: 2026/01/03 15:41:30 by outaouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substring);
 }
 
-void	digit_checker(char c, char **av, t_node **stack)
-{
-	(void)av;
-	if (!(c >= '0' && c <= '9'))
-		error_exit_av(stack, av);
-	else
-		return ;
-}
-
 long	ft_atoi(char *str, t_node **stack, char **av)
 {
 	long	result;
@@ -55,19 +46,18 @@ long	ft_atoi(char *str, t_node **stack, char **av)
 	result = 0;
 	i = 0;
 	sign = 1;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i++] == '-')
+		if (str[i] == '-')
 			sign = -sign;
+		i++;
 	}
-	digit_checker(str[i], av, stack);
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = (result * 10) + (str[i++] - '0');
+		result = (result * 10) + (str[i] - '0');
 		if (result * sign > 2147483647 || result * sign < -2147483648)
 			error_exit_av(stack, av);
+		i++;
 	}
 	if (str[i] != '\0')
 		error_exit_av(stack, av);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spilota <spilota@student.42.fr>            +#+  +:+       +#+        */
+/*   By: outaouss <outaouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 16:06:33 by outaouss          #+#    #+#             */
-/*   Updated: 2026/01/02 17:01:21 by spilota          ###   ########.fr       */
+/*   Updated: 2026/01/03 15:34:50 by outaouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ void	stack_add_back(t_node **stack, t_node *to_add)
 
 t_node	*create_node(long value, t_node **stack, char **av)
 {
-	(void)av;
 	t_node	*new_node;
 
+	(void)av;
 	new_node = malloc(sizeof(t_node));
 	if (!new_node)
 		error_exit_av(stack, av);

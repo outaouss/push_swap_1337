@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sorting_algo.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spilota <spilota@student.42.fr>            +#+  +:+       +#+        */
+/*   By: outaouss <outaouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 16:06:49 by outaouss          #+#    #+#             */
-/*   Updated: 2026/01/02 18:27:48 by spilota          ###   ########.fr       */
+/*   Updated: 2026/01/03 15:35:05 by outaouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	shank_sort_phase1(t_node **stack_a, t_node **stack_b)
 	i = 0;
 	if (stack_len(*stack_a) <= 100)
 		range = 16;
-	else 
+	else
 		range = 44;
 	while (*stack_a)
 	{
